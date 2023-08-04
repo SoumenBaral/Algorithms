@@ -28,7 +28,7 @@ int main ()
     int x ;
     cin>>x;
     bool result = Search(ar,l,r,x);
-    if(!result)cout<<"No"<<endl;
+    if(!result)cout<<"NO"<<endl;
     else{
         cout<<"YES"<<endl;
     }

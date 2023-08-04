@@ -1,17 +1,17 @@
 #include<bits/stdc++.h>
 using namespace std;
- int Search(int v[], int l, int r, int t)
-    {
-        int mid = (l+r)/2;
-        while(l<=r){
-            if(v[mid]==t)return mid;
-            if(v[mid]<t)return Search(v,mid+1,r,t);
-            if(v[mid]>t)return Search(v,l,mid-1,t);
-        }
-        return -1;
+int Search(int v[], int l, int r, int t)
+{
+    int mid = (l+r)/2;
+    while(l<=r){
+        if(v[mid]==t)return mid;
+        if(v[mid]<t)return Search(v,mid+1,r,t);
+        if(v[mid]>t)return Search(v,l,mid-1,t);
     }
+    return -1;
+}
 int main ()
-{ 
+{
     int n;
     cin>>n;
     int ar[n];
@@ -27,5 +27,6 @@ int main ()
     else{
         cout<<result<<endl;
     }
+
     return 0;
 }
