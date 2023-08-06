@@ -3,4 +3,4 @@
 //3.Traversal 
 //4.Graph Algorithms
 
-//Graph is called Vertex and ages..(v,a);
+//Graph is called Vertex and Edges ..(v,E);
