@@ -7,11 +7,11 @@ int main ()
     int n,m;
     cin>>n>>m;
     for(int i=0;i<m;i++){
-        int u,v;
-        cin>>u>>v;
-        adjmat[u][v]=1; //Its for Directed Graph
-        adjmat[v][u]= 1; //Its for Undirected Graph
-        
+        int u,v,w;
+        cin>>u>>v>>w;//W for Weighted Graph
+        adjmat[u][v]=w; //Its for Directed Graph
+        adjmat[v][u]= w; //Its for Undirected Graph
+
     }
     for (int i = 1; i <= n; i++)
     {
