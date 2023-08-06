@@ -10,6 +10,7 @@ int main ()
         int u,v;
         cin>>u>>v;
         adjmat[u][v]=1;
+        adjmat[v][u]= 1;
     }
     for (int i = 1; i <= n; i++)
     {
