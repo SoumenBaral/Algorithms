@@ -20,3 +20,24 @@
                     //   \/   \/
                     //   C------>D
                     //      10
+
+
+
+//Special Graph (Tree)
+//if it want a tree they to fullfil 2 condition 
+// 1. One Connected component 
+// 2. No cycle is present 
+
+                //        A
+                //       / \  
+                //      /   \   
+                //     /     B
+                //    /       \ 
+                //   C-------->E--------->F
+                //   |
+                //   | 
+                //   |
+                //   D              
+
+
+//We have to Clear a Connection Because its Create a Circle........
