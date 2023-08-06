@@ -22,3 +22,9 @@
 // 7  1  50
 // 8  3  10
 // -------
+
+
+// Type of Representation
+// 1.Adjacency Matrix
+// 2.Adjacency  list
+// 3. List of Edges
