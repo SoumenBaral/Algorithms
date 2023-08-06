@@ -13,6 +13,9 @@ int main ()
         adj[v].push_back(u); //Its for Undirected Graph
 
     }
+    for(int i=1;i<=n;i++){
+        
+    }
   
     
     return 0;
