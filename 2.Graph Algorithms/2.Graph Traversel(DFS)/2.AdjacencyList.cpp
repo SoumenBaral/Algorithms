@@ -7,14 +7,19 @@ int main ()
     int n,m;
     cin>>n>>m;
     for(int i=0;i<m;i++){
-        int u,v,w;
+        int u,v;
         cin>>u>>v;//W for Weighted Graph
         adj[u].push_back(v); //Its for Directed Graph
-        adj[v].push_back(u); //Its for Undirected Graph
+        // adj[v].push_back(u); //Its for Undirected Graph
 
     }
     for(int i=1;i<=n;i++){
-        cout<<"No more to Day "<<endl;
+        cout<<"list "<<i<<" : ";
+        for(int j:adj[i]){
+            cout<<j<<" ";
+        }
+        cout<<endl;
+
     }
   
     
