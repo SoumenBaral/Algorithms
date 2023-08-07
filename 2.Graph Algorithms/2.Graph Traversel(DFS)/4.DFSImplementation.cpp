@@ -6,16 +6,17 @@ bool visited[N];
 void dfs(int u){
     //Section 1
     //Action just after entering the node u
-    cout<<"visited Node : "<<  u<<endl;
     visited[u]=true;
+    cout<<"visited Node : "<<  u<<endl;
+    
     for(int v: adj[u])
     {
         //Section 2
         //Action Before Entering Neighbor
-        if(visited[u]==true)continue;
-        // if(visited[u] == false){
+        // if(visited[u]==true)continue;
+        if(visited[u] == false){
               dfs(v);
-        // }
+        }
       
         //Section 3
         //Action After Exiting the Neighbor
@@ -45,7 +46,7 @@ int main ()
     // }
   dfs(1);
 //   cout<<"Visiting array"<<":"<<endl;
-//   for(int i=1; i<=n;i++){
+//   for(int i=1; i<=n; i++){
 //     cout<<"Node :"<<i<<" Status: "<<visited[i]<<endl;
 //   }
     
