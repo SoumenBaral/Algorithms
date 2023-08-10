@@ -1,7 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
-const int N = 1e5+5;
+const int N = 1e3+5;
 vector<int> adj[N];
+int adjMatrix[N][N];
 
 int main() {
     int n, m;
@@ -13,22 +14,17 @@ int main() {
     }
     
     for (int i = 1; i <= n; i++) {
-        for (int j = 1; j <= n; j++) {
-            bool found = false;
-            for (int k : adj[i]) {
-                if (k == j) {
-                    found = true;
-                    break;
-                }
-            }
-            if (found) {
-                cout << 1 << " ";
-            } else {
-                cout << 0 << " ";
-            }
+        for (int j :adj[i]) {
+           adjMatrix[i][j]=1;
         }
-        cout << endl;
     }
+    for (int i = 1; i <= n; i++) {
+        for (int j=1;j<=n;j++) {
+          cout<< adjMatrix[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+
     
     return 0;
 }
