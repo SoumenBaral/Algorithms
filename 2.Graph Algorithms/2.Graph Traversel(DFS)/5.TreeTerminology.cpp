@@ -5,7 +5,7 @@ Tree Terminology
 3. Number of Adages will be -1 from the node or vertex
 4. We have to fix a Root 
 
-some of key 
+some of key Word
 * Child 
 * parent 
 * sibling 
