@@ -4,6 +4,7 @@ const int N = 1e5+5;
 vector<int>adj[N];
 bool visited[N];
 void dfs(int u){
+    cout<<u <<" ";
     visited[u]= true;
     for(int v: adj[u]){
         if(visited[v])continue;
@@ -38,12 +39,14 @@ int main ()
         adj[u].push_back(v);
         adj[v].push_back(u);
     }
-   int cc = 0;
+   int cc = 1;
    for(int i=1;i<=n;i++){
         if(visited[i])continue;
+        cout<<"component " <<cc <<" : ";
         dfs(i);
+        cout<<endl;
         cc++;
    }
-   cout<<"Number of connected Components is "<<cc<<endl;
+   cout<<"Number of connected Components is "<<cc-1<<endl;
    
 }
