@@ -14,7 +14,7 @@ void dfs(int u){
         //Section 2
         //Action Before Entering Neighbor
         // if(visited[u]==true)continue;
-        if(visited[u] == false){
+        if(visited[v] == false){
               dfs(v);
         }
       
