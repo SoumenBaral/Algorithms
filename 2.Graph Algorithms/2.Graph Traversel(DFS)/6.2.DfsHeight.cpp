@@ -19,7 +19,7 @@ void dfs(int u){
             // Depth[v]=Depth[u]+1;
               dfs(v);
               if(Height[v]+1>Height[u]){
-                Height[u]=Height[v]+1;
+                Height[u]=Height[v] + 1;
               }
               
 
