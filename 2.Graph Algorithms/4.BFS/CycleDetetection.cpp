@@ -32,7 +32,7 @@ int main ()
   }
 
    if(isCycle){
-    cout<<"Cycle Detected"<<endl;
+    cout<<"Cycle Detected"<<endl ;
    }
    else{
     cout<<"No Cycle Detected"<<endl;
