@@ -43,6 +43,6 @@ int main ()
    for(int i= 1; i<=n; i++){
     cout<<"Parent of "<< i<<" : "<<parent[i]<<endl;
    }
-   
+   //done 
     return 0;
 }
