@@ -1,23 +1,39 @@
 #include<bits/stdc++.h>
 using namespace std;
+void marge(int a[],int l, int m ,int r){
+    int leftSize = m-l+1;
+    int rightSize = r-m;
+    int L[leftSize],R[rightSize]; //we make to array to divide an array into two part ;
+    int k = 0;
+    for (int i = 0; i <= m; i++)
+    {
+        L[k]=a[i]; //here i start with 0 and end in m that will provide question ;
+        k++;
+    }
+     k = 0;
+    for (int i = m+1; i <=r; i++)
+    {
+        R[k]=a[i];//Here i start with m+1;and k start with 0;
+        k++;
+    }
+    for (int i = 0; i <leftSize ; i++)
+    {
+        cout<<L[i]<< " ";
+    }
+    
+    
+
+}
 int main ()
 {
-    int n,m ;
+    int n;
     cin>>n;
-    int ar1[n];
+    int a[n];
     for(int i = 0; i<n; i++){
-        cin>>ar1[i];
+        cin>>a[i];
     }
-    cin>>m;
-    int ar2[m];
-    for(int i = 0; i<m; i++){
-        cin>>ar2[i];
-    }
-    for(int i = 0; i<n; i++){
-        cout<<ar1[i]<<" ";
-    }
-    cout<<m<<endl;
-    cout<<ar1[3];
+    marge(a,0,3,n-1);
+   
 
 
     return 0;
