@@ -43,9 +43,29 @@ int main ()
    for(int i= 1; i<=n; i++){
     cout<<"Parent of "<< i<<" : "<<parent[i]<<endl;
    }
-   
+   vector<int>path;
+   int current = d;
+   while (current != -1)
+   {
+    path.push_back(current);
+    current = parent[current];
+   }
+   reverse(path.begin(),path.end());
+   cout<<"path : ";
+  
+   //course
+ 
+   for(int node:path){
+    cout<<node<<" ";
+   }
+//     cout<<endl;
+//     while (!path.empty())
+//    {
+//     cout<<path.back()<<" "; //my Role 
+//     path.pop_back();
+//    }
     return 0;
-    
+
 }
 //I think i can go to the cp world man jibon 
 // onk kothin amar ki kora doraker ami jani na 
