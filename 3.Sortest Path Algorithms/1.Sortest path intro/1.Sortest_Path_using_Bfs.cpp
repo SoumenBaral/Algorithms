@@ -24,6 +24,7 @@ void bfs(int s){
     }
 
 }
+//BFS complexity is O(N+M);
 int main ()
 {
     int n,m;
