@@ -40,9 +40,9 @@ int main ()
     bfs(s);
     cout<<"Shortest Distance  "<<level[d];
     cout<<endl;
-   for(int i= 1; i<=n; i++){
-    cout<<"Parent of "<< i<<" : "<<parent[i]<<endl;
-   }
+//    for(int i= 1; i<=n; i++){
+//     cout<<"Parent of "<< i<<" : "<<parent[i]<<endl;
+//    }
    vector<int>path;
    int current = d;
    while (current != -1)
